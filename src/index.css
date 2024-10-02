@@ -6,4 +6,15 @@
 body {
     @apply bg-slate-900 text-white min-h-screen;
   }
+  @keyframes fillBar {
+    from {
+      width: 0;
+    }
+    to {
+      width: var(--progress);
+    }
+  }
   
+  .progress-bar {
+    animation: fillBar 2s ease-in-out forwards;
+  }

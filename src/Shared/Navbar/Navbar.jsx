@@ -7,7 +7,7 @@ import { MdContactMail } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <div className="fixed left-8 top-1/2 transform -translate-y-1/2 w-16 md:w-48">
+    <div className="fixed left-8  top-1/2 transform -translate-y-1/2 w-16 md:w-48">
       <ul className="space-y-6">
         <li>
           <NavLink
