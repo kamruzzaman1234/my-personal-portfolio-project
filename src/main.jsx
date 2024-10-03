@@ -9,6 +9,9 @@ import {
 import Layout from './LayOut/Layout.jsx';
 import Home from './Home/Home.jsx';
 import About from './Home/About/About.jsx';
+import Portfolio from './Home/Portfolio/Portfolio.jsx';
+import Blog from './Home/Blog/Blog.jsx';
+import BlogPost from './Home/Blog/BlogPost.jsx';
 
 // Define the router with your routes
 const router = createBrowserRouter([
@@ -23,6 +26,18 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About/>
+      },
+      {
+        path:'/portfolio',
+        element: <Portfolio></Portfolio>
+      },
+      {
+        path:"/blog",
+        element:<Blog></Blog>
+      },
+      {
+        path:'/blogPost',
+        element: <BlogPost></BlogPost>
       }
     ],
   },

@@ -37,7 +37,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="/contact"
+            to="/portfolio"
             aria-label="Contact"
             className={({ isActive }) =>
               `flex items-center justify-center w-12 h-12 md:w-14 md:h-14 p-2 md:p-3 border-2 rounded-full transition duration-300 ease-in-out ${
