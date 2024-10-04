@@ -21,7 +21,7 @@ const About = () => {
       <div className="container mx-auto mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Information About Me */}
-          <div className="flex flex-col  p-6 rounded-lg">
+          <div className="flex flex-col  md:col-span-3 lg:col-span-1 p-6 rounded-lg">
             <h2 className="uppercase mb-6 font-bold font-oldstandard text-2xl">Information <br /> About Me</h2>
             <p className="font-oldstandard mb-6">
               My name is Kamruzzaman, and I am a Frontend Developer with experience in React, web design, and various frontend technologies. Currently, I am pursuing a BSc in CSE at Daffodil International University and am passionate about building dynamic and user-friendly web applications.

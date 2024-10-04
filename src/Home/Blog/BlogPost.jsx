@@ -15,7 +15,6 @@ const BlogPost = () => {
       <div className=" shadow-md rounded-lg p-6">
         <h1 className="text-3xl font-oldstandard font-bold mb-4">Blog Post Title</h1>
         <p className=" mb-6 text-white">This is the detailed content of the blog post.</p>
-        <Link to="/blog" className="bg-green-500 font-bold text-white">New Blog</Link>
 
         {/* Comment Section */}
         <div className="mt-10">
@@ -23,7 +22,7 @@ const BlogPost = () => {
           <textarea 
             value={commentText} 
             onChange={(e) => setCommentText(e.target.value)} 
-            className="w-full p-2 border border-gray-300 rounded mb-4" 
+            className="w-full p-2 text-black rounded mb-4" 
             placeholder="Write your comment..." 
           />
           <button 
@@ -37,6 +36,11 @@ const BlogPost = () => {
             {comments.map((comment, index) => (
               <p key={index} className="border-b border-gray-300 py-2">{comment}</p>
             ))}
+          </div>
+          <div className="pt-6">
+          <Link to="/blog"
+         className="bg-green-500 p-4 rounded-lg font-bold text-white">
+        New Blog</Link>
           </div>
         </div>
       </div>

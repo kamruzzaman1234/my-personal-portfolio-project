@@ -1,4 +1,8 @@
-import React from 'react';
+import { FaFacebookF, FaYoutube, FaLinkedinIn, FaRegAddressCard } from 'react-icons/fa';
+import { MdOutlineMail } from 'react-icons/md';
+import { IoIosContacts } from 'react-icons/io';
+import { GrLanguage } from 'react-icons/gr';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -16,8 +20,11 @@ const Home = () => {
           </div>
 
           {/* Decorative Border on the Image */}
-          {/* <div className="absolute hidden md:block h-full w-1/4
-           shadow-lg border-l-4 border-t-4 border-b-4 border-white left-0"></div> */}
+           {/* <div className="absolute hidden md:block h-full w-1/4
+           shadow-lg border-l-4 border-t-4 border-b-4 border-white left-0">
+             
+
+            </div>  */}
 
           {/* Column 2 - Name, Description, and Download Button */}
           <div className="rounded-lg shadow-lg md:pl-8">
@@ -35,6 +42,19 @@ const Home = () => {
               I strive to continuously improve my skills by staying up-to-date with the latest 
               web development trends and practices.
             </p>
+
+            <div className="flex gap-5 mb-10">
+                <Link to="https://facebook.com" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
+                  <FaFacebookF size={24} className="text-blue-600"/>
+                </Link>
+                <Link to="https://youtube.com" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
+                  <FaYoutube size={24} className="text-red-600"/>
+                </Link>
+                <Link to="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
+                  <FaLinkedinIn size={24} className="text-blue-600"/>
+                </Link>
+              </div>
+
             <a
               href="/path/to/yourfile.pdf"  // Provide the actual download URL
               download="resume.pdf"
