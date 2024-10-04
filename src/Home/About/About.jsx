@@ -1,5 +1,9 @@
 import React from "react";
 import SkillBar from "./SkillBar";
+import {Link} from 'react-router-dom'
+import { FaFacebookF, FaYoutube, FaLinkedinIn, FaRegAddressCard,FaRegFileWord, FaLaptopCode } from 'react-icons/fa';
+import { FaCode } from "react-icons/fa";
+import { SiCairographics } from "react-icons/si";
 
 const About = () => {
   const skills = [
@@ -21,11 +25,24 @@ const About = () => {
       <div className="container mx-auto mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Information About Me */}
-          <div className="flex flex-col  md:col-span-3 lg:col-span-1 p-6 rounded-lg">
+          <div className="flex flex-col col-span-3  md:col-span-3 lg:col-span-1 p-6 rounded-lg">
             <h2 className="uppercase mb-6 font-bold font-oldstandard text-2xl">Information <br /> About Me</h2>
             <p className="font-oldstandard mb-6">
               My name is Kamruzzaman, and I am a Frontend Developer with experience in React, web design, and various frontend technologies. Currently, I am pursuing a BSc in CSE at Daffodil International University and am passionate about building dynamic and user-friendly web applications.
             </p>
+
+            <div className="flex gap-5 mb-10">
+                <Link to="https://www.facebook.com/kamrulhasan.labib" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
+                  <FaFacebookF size={24} className="text-blue-600"/>
+                </Link>
+                <Link to="https://www.youtube.com/@user-wx4cl7eu9q" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
+                  <FaYoutube size={24} className="text-red-600"/>
+                </Link>
+                <Link to="https://www.linkedin.com/in/md-kamruzzaman-298786249/" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
+                  <FaLinkedinIn size={24} className="text-blue-600"/>
+                </Link>
+              </div>
+
             <a
               href="/path/to/yourfile.pdf"  // Provide the actual download URL
               download="resume.pdf"
@@ -33,45 +50,42 @@ const About = () => {
             >
               Download Resume
             </a>
+           
           </div>
 
           {/* Skills Overview */}
           <div className="flex p-4 rounded-lg col-span-2">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-7 w-full">
               {/* Web Design */}
-              <div className="space-y-3  bg-slate-800 flex flex-col hover:bg-green-500 p-5 justify-center border-2 
+              <div className="space-y-3 items-center  bg-slate-800 flex flex-col hover:bg-green-500 p-5 justify-center border-2 
                rounded-lg transition-colors duration-300">
-                <h2 className="font-oldstandard uppercase  font-bold text-[20px] hover:text-white">WEB DESIGN</h2>
-                <p className="text-justify">
-                  Experienced in Web Design, specializing in creating responsive, user-friendly websites with modern layouts and efficient UI/UX design, using HTML, CSS, JavaScript, and frameworks like React.
-                </p>
+                <FaCode className="text-6xl text-white font-bold mb-6"/>
+                <h2 className="text-[26px] text-green-500 font-oldstandard uppercase hover:text-white  font-bold">Web Design</h2>
+                <p className="text-[17px] font-oldstandard">Its gain this html, css, js , tailwind css</p>
               </div>
 
               {/* Graphic Design */}
-              <div className="space-y-3  bg-slate-800 flex flex-col hover:bg-green-500 p-5 justify-center border-2 
+              <div className="space-y-3 items-center  bg-slate-800 flex flex-col hover:bg-green-500 p-5 justify-center border-2 
                rounded-lg transition-colors duration-300">
-                <h2 className="font-oldstandard uppercase font-bold  text-[20px] hover:text-white">Graphic Design</h2>
-                <p className="text-justify">
-                  Proficient in Graphic Design, focusing on creating visually compelling designs for digital and print media, with expertise in tools like Adobe Photoshop, Illustrator, and Canva.
-                </p>
+                <SiCairographics className="text-6xl text-white mb-6 font-bold"/>
+                <h2 className="text-[26px] text-green-500 font-oldstandard hover:text-white  font-bold uppercase">Graphics Design</h2>
+                <p className="text-[17px] font-oldstandard">Its gain this html, css, js , tailwind css</p>
               </div>
 
               {/* MS Word */}
-              <div className="space-y-3  bg-slate-800 flex flex-col hover:bg-green-500 p-5 justify-center border-2 
+              <div className="space-y-3 items-center  bg-slate-800 flex flex-col hover:bg-green-500 p-5 justify-center border-2 
                rounded-lg transition-colors duration-300">
-                <h2 className="font-oldstandard uppercase font-bold text-[20px] hover:text-white">MS Word</h2>
-                <p className="text-justify">
-                  Proficient in MS Word, skilled in creating, formatting, and editing professional documents, reports, and presentations with advanced features such as styles, templates, and mail merge.
-                </p>
+                <FaRegFileWord className="text-6xl text-white mb-6 font-bold"/>
+                <h2 className="text-[26px] text-green-500 hover:text-white font-oldstandard font-bold">MS WORD</h2>
+                <p className="text-[17px] font-oldstandard">Its gain this html, css, js , tailwind css</p>
               </div>
 
               {/* Problem Solving */}
-              <div className="space-y-3  bg-slate-800 flex flex-col hover:bg-green-500 p-5 justify-center border-2 
+              <div className="space-y-3 items-center  bg-slate-800 flex flex-col hover:bg-green-500 p-5 justify-center border-2 
                rounded-lg transition-colors duration-300">
-                <h2 className="font-oldstandard uppercase font-bold text-[20px] hover:text-white">Problem Solving</h2>
-                <p className="text-justify">
-                  Strong problem-solving skills with the ability to analyze complex issues, identify solutions, and implement effective strategies to overcome challenges in both technical and non-technical environments.
-                </p>
+                <FaLaptopCode className="text-6xl text-white mb-6 font-bold"/>
+                <h2 className="text-[26px] text-green-500 font-oldstandard hover:text-white  font-bold uppercase">Problem Solving</h2>
+                <p className="text-[17px] font-oldstandard">Its gain this html, css, js , tailwind css</p>
               </div>
             </div>
           </div>
@@ -83,7 +97,7 @@ const About = () => {
         <div className="text-center mb-10">
           <h2 className="text-4xl font-oldstandard font-bold">MY SKILLS</h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
           {skills.map((skill, index) => (
             <SkillBar
               key={index}

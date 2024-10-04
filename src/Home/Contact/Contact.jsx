@@ -43,13 +43,13 @@ const Contact = () => {
 
               {/* Social Media Icons */}
               <div className="flex gap-5 mb-10">
-                <Link to="https://facebook.com" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
+                <Link to="https://www.facebook.com/kamrulhasan.labib" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
                   <FaFacebookF size={24} className="text-blue-600"/>
                 </Link>
-                <Link to="https://youtube.com" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
+                <Link to="https://www.youtube.com/@user-wx4cl7eu9q" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
                   <FaYoutube size={24} className="text-red-600"/>
                 </Link>
-                <Link to="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
+                <Link to="https://www.linkedin.com/in/md-kamruzzaman-298786249/" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
                   <FaLinkedinIn size={24} className="text-blue-600"/>
                 </Link>
               </div>
