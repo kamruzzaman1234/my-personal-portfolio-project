@@ -14,9 +14,9 @@ const Contact = () => {
       </div>
 
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mx-20 md:mx-20 lg:mx-0">
           {/* Left Column - Contact Info */}
-          <div className="flex flex-col bg-slate-800 shadow-lg p-6 rounded-lg space-y-5">
+          <div className="flex flex-col  bg-slate-800 shadow-lg p-6 rounded-lg space-y-5">
             <div className="space-y-4">
               <h2 className="text-2xl md:text-3xl font-oldstandard font-bold">CONTACT ME HERE</h2>
               <p className="text-lg md:text-xl">For network consultancy services, feel free to get in touch.</p>
@@ -57,7 +57,7 @@ const Contact = () => {
           </div>
 
           {/* Right Column - Contact Form */}
-          <div>
+          <div className="">
             <form action="">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="form-control">

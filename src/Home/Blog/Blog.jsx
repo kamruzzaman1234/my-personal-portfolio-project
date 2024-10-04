@@ -7,10 +7,10 @@ const Blog = () => {
         <h2 className="text-4xl font-bold">My Blog</h2>
         <p className="text-2xl">Discover my thoughts on web development and more.</p>
       </div>
-      
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="container mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-20 md:mx-20 lg:mx-10">
         {/* Example of a blog post preview */}
-        <div className="bg-white shadow-lg rounded-lg p-4 sm:p-6 hover:shadow-xl transition-shadow">
+        <div className="bg-white shadow-lg  rounded-lg p-4 sm:p-6 hover:shadow-xl transition-shadow">
             <img
               src="https://i.ibb.co.com/SypffHt/photo-1649180543887-158357417159.jpg"
               alt="Shopping Complex"
@@ -85,6 +85,9 @@ const Blog = () => {
             </div>
           </div>
       </div>
+      </div>
+      
+     
     </div>
   );
 };

@@ -39,8 +39,8 @@ const BlogPost = () => {
           </div>
           <div className="pt-6">
           <Link to="/blog"
-         className="bg-green-500 p-4 rounded-lg font-bold text-white">
-        New Blog</Link>
+         className="bg-green-500 p-4 rounded-lg btn font-bold text-white">
+             New Blog</Link>
           </div>
         </div>
       </div>

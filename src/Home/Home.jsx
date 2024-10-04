@@ -2,20 +2,26 @@ import { FaFacebookF, FaYoutube, FaLinkedinIn, FaRegAddressCard } from 'react-ic
 import { MdOutlineMail } from 'react-icons/md';
 import { IoIosContacts } from 'react-icons/io';
 import { GrLanguage } from 'react-icons/gr';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();  // AOS ইনিশিয়ালাইজ
+  }, []);
   return (
     <div className=" text-white flex items-center justify-center py-20">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2  gap-8 items-center relative">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  gap-8 items-center relative">
           
           {/* Column 1 - Image */}
-          <div className="flex justify-center my-2">
+          <div className="flex lg:justify-center md:justify-start my-2" data-aos="zoom-in-down">
             <img
               src="https://i.ibb.co/DC4dYGj/Snapchat-1879419947-removebg-preview-1.png" // Replace with your image URL
               alt="Sample"
-              className="w-full h-[400px] md:h-[600px] max-w-md rounded-lg  object-contain"
+              className="w-full h-[400px] md:h-[400px] lg:h-[650px]  max-w-md rounded-lg  object-contain" 
             />
           </div>
 
@@ -27,7 +33,7 @@ const Home = () => {
             </div>  */}
 
           {/* Column 2 - Name, Description, and Download Button */}
-          <div className="rounded-lg shadow-lg md:pl-8">
+          <div className="rounded-lg shadow-lg px-24 md:px-20 lg:px-0 " data-aos="zoom-in-up">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-5 leading-tight">
               Hi, I'm Labib. <span className="text-green-500">I am a FrontEnd Developer</span>
             </h1>
@@ -55,10 +61,11 @@ const Home = () => {
                 </Link>
               </div>
 
-            <a
+            
+              <a
               href="/path/to/yourfile.pdf"  // Provide the actual download URL
               download="resume.pdf"
-              className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out"
+              className="bg-green-500 btn text-white font-oldstandard w-2/3 md:w-1/3 lg:w-1/2 px-4 py-2 rounded transition-colors duration-300 hover:bg-green-600"
             >
               Download Resume
             </a>

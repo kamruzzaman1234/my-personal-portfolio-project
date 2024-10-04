@@ -6,6 +6,8 @@ import { RiExportFill } from "react-icons/ri";
 import { FaBlogger } from "react-icons/fa6";
 import { MdContactMail } from "react-icons/md";
 import { FaBars, FaTimes } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,7 +50,7 @@ const Navbar = () => {
       </div>
 
       {/* Navbar for all devices */}
-      <div
+      <div 
         className={`fixed top-1/2 transform -translate-y-1/2 w-16 md:w-48 lg:w-64 transition-all duration-500 ease-in-out bg-transparent ${
           isOpen ? "left-8" : "left-[-250px] lg:left-8"
         } md:left-8 lg:left-8`}

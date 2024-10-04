@@ -11,7 +11,7 @@ const Portfolio = () => {
       </div>
 
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-20 md:mx-20 lg:mx-10">
           
           {/* Project 1 */}
           <div className="bg-white shadow-lg rounded-lg p-4 sm:p-6 hover:shadow-xl transition-shadow">
