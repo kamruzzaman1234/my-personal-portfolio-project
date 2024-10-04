@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 
 const Home = () => {
   useEffect(() => {
-    AOS.init();  // AOS ইনিশিয়ালাইজ
+    AOS.init(); 
   }, []);
   return (
     <div className=" text-white flex items-center justify-center py-20">

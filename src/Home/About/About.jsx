@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SkillBar from "./SkillBar";
 import {Link} from 'react-router-dom'
 import { FaFacebookF, FaYoutube, FaLinkedinIn, FaRegAddressCard,FaRegFileWord, FaLaptopCode } from 'react-icons/fa';
 import { FaCode } from "react-icons/fa";
 import { SiCairographics } from "react-icons/si";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+  useEffect(() => {
+    AOS.init();  
+  }, []);
+
   const skills = [
     { name: 'HTML', level: '95%', color: 'bg-green-500' },
     { name: 'CSS', level: '90%', color: 'bg-green-500' },
@@ -25,13 +31,14 @@ const About = () => {
       <div className="container mx-auto mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Information About Me */}
-          <div className="flex flex-col col-span-3 mx-20 md:mx-20 lg:mx-0  md:col-span-3 lg:col-span-1 p-6 rounded-lg">
+          <div className="flex flex-col col-span-3 mx-20 md:mx-20 lg:mx-0 
+           md:col-span-3 lg:col-span-1 p-6 rounded-lg" data-aos="zoom-in-left">
             <h2 className="uppercase mb-6 font-bold font-oldstandard text-2xl">Information <br /> About Me</h2>
             <p className="font-oldstandard mb-6">
               My name is Kamruzzaman, and I am a Frontend Developer with experience in React, web design, and various frontend technologies. Currently, I am pursuing a BSc in CSE at Daffodil International University and am passionate about building dynamic and user-friendly web applications.
             </p>
 
-            <div className="flex gap-5 mb-10">
+            <div className="flex gap-5 mb-10" data-aos="zoom-in-right">
                 <Link to="https://www.facebook.com/kamrulhasan.labib" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
                   <FaFacebookF size={24} className="text-blue-600"/>
                 </Link>
@@ -54,7 +61,7 @@ const About = () => {
           </div>
 
           {/* Skills Overview */}
-          <div className="flex p-4 rounded-lg col-span-2">
+          <div className="flex p-4 rounded-lg col-span-2" data-aos="zoom-out">
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-7
              w-full mx-20 md:mx-20 lg:mx-0">
               {/* Web Design */}
@@ -99,7 +106,7 @@ const About = () => {
 
       {/* Skills Section */}
       <div className="container mx-auto mt-10">
-        <div className="text-center mb-10">
+        <div className="text-center mb-10" data-aos="zoom-out-up">
           <h2 className="text-4xl font-oldstandard font-bold">MY SKILLS</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 mx-20 md:mx-20 lg:mx-0 lg:grid-cols-2 gap-6">

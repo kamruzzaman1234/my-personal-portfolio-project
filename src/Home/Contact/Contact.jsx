@@ -3,12 +3,17 @@ import { MdOutlineMail } from 'react-icons/md';
 import { IoIosContacts } from 'react-icons/io';
 import { GrLanguage } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
-
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Contact = () => {
+  useEffect(() => {
+    AOS.init(); 
+  }, []);
   return (
     <div className="py-10 md:py-20">
       {/* Title Section */}
-      <div className="text-center mb-10 space-y-4">
+      <div className="text-center mb-10 space-y-4" data-aos="zoom-in-right">
         <h2 className="text-3xl md:text-4xl font-bold uppercase font-oldstandard">Contact ME</h2>
         <p className="text-xl md:text-2xl">Please Contact Me and learn more about me</p>
       </div>
@@ -16,14 +21,14 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mx-20 md:mx-20 lg:mx-0">
           {/* Left Column - Contact Info */}
-          <div className="flex flex-col  bg-slate-800 shadow-lg p-6 rounded-lg space-y-5">
+          <div className="flex flex-col  bg-slate-800 shadow-lg p-6 rounded-lg space-y-5" data-aos="zoom-in-left">
             <div className="space-y-4">
               <h2 className="text-2xl md:text-3xl font-oldstandard font-bold">CONTACT ME HERE</h2>
               <p className="text-lg md:text-xl">For network consultancy services, feel free to get in touch.</p>
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-4">
+            <div className="space-y-4" data-aos="zoom-out-up">
               <div className="flex gap-4 items-center">
                 <FaRegAddressCard className="text-2xl text-green-300" />
                 <p className="text-lg md:text-xl font-oldstandard">Location Saver, Ashulia, Dhaka</p>
@@ -57,7 +62,7 @@ const Contact = () => {
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="">
+          <div className="" data-aos="zoom-out">
             <form action="">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="form-control">
