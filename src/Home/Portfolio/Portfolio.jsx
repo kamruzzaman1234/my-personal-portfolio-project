@@ -9,9 +9,9 @@ const Portfolio = () => {
   },[])
   return (
     <div className="py-16 px-4 sm:px-8 lg:px-16">
-      <div className="text-center mb-12 space-y-6">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-oldstandard">MY PORTFOLIO</h2>
-        <p className="font-oldstandard text-lg sm:text-xl lg:text-2xl">
+      <div className="text-center  mb-12 space-y-6">
+        <h2 className="text-[18px] font-bold font-oldstandard">MY PORTFOLIO</h2>
+        <p className="font-oldstandard text-sm">
           Check out my projects below and feel free to get in touch for collaborations or inquiries
         </p>
       </div>
@@ -20,11 +20,11 @@ const Portfolio = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-20 md:mx-20 lg:mx-10">
           
           {/* Project 1 */}
-          <div className="bg-white shadow-lg rounded-lg p-4 sm:p-6 hover:shadow-xl transition-shadow" data-aos="zoom-in-right">
+          <div className="bg-white shadow-lg rounded-lg p-3 hover:shadow-xl transition-shadow" data-aos="zoom-in-right">
             <img
               src="https://i.ibb.co.com/jgMMZxY/photo-gallery-website-templates-featured-image.jpg"
               alt="Gallery Show"
-              className="w-full h-48 object-cover rounded-t-lg"
+              className=" w-full h-48 object-cover rounded-t-lg"
             />
             <div className="mt-4">
               <h3 className="text-lg sm:text-xl font-semibold text-black">Gallery Show</h3>

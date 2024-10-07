@@ -33,7 +33,7 @@ const Contact = () => {
                 <FaRegAddressCard className="text-2xl text-green-300" />
                 <p className="text-lg md:text-xl font-oldstandard">Location Saver, Ashulia, Dhaka</p>
               </div>
-              <div className="flex gap-4 items-center">
+              <div className="flex gap-4  items-center">
                 <MdOutlineMail className="text-2xl text-green-300" />
                 <p className="text-lg md:text-xl font-oldstandard">kamruzzamancse22@gmail.com</p>
               </div>
@@ -47,8 +47,10 @@ const Contact = () => {
               </div>
 
               {/* Social Media Icons */}
-              <div className="flex gap-5 mb-10">
-                <Link to="https://www.facebook.com/kamrulhasan.labib" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
+              <div className="flex flex-col md:flex-row lg:flex-row gap-5 mb-10">
+                <Link to="https://www.facebook.com/kamrulhasan.labib" target="_blank" rel="noopener noreferrer" 
+                className="bg-green-100 sm:bg-none text-white p-3 lg:p-3
+                 rounded-full hover:bg-slate-700 transition-all">
                   <FaFacebookF size={24} className="text-blue-600"/>
                 </Link>
                 <Link to="https://www.youtube.com/@user-wx4cl7eu9q" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">

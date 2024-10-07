@@ -34,7 +34,7 @@ const Home = () => {
 
           {/* Column 2 - Name, Description, and Download Button */}
           <div className="rounded-lg shadow-lg px-24 md:px-20 lg:px-0 " data-aos="zoom-in-up">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-5 leading-tight">
+            <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold text-white mb-5 leading-tight">
               Hi, I'm Labib. <span className="text-green-500">I am a FrontEnd Developer</span>
             </h1>
             <p className="text-sm md:text-base mb-8 leading-relaxed">
@@ -49,14 +49,18 @@ const Home = () => {
               web development trends and practices.
             </p>
 
-            <div className="flex gap-5 mb-10">
-                <Link to="https://www.facebook.com/kamrulhasan.labib" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
+            <div className="flex gap-5 flex-row mb-10 hidden lg:flex md:flex">
+                <Link to="https://www.facebook.com/kamrulhasan.labib"
+                 target="_blank" rel="noopener noreferrer"
+                  className="bg-green-100 text-white p-3
+                   rounded-full hover:bg-slate-700 transition-all">
                   <FaFacebookF size={24} className="text-blue-600"/>
                 </Link>
                 <Link to="https://www.youtube.com/@user-wx4cl7eu9q" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
                   <FaYoutube size={24} className="text-red-600"/>
                 </Link>
-                <Link to="https://www.linkedin.com/in/md-kamruzzaman-298786249/" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
+                <Link to="https://www.linkedin.com/in/md-kamruzzaman-298786249/" target="_blank" rel="noopener noreferrer" className="bg-green-100
+                 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
                   <FaLinkedinIn size={24} className="text-blue-600"/>
                 </Link>
               </div>
@@ -65,7 +69,9 @@ const Home = () => {
               <a
               href="/path/to/yourfile.pdf"  // Provide the actual download URL
               download="resume.pdf"
-              className="bg-green-500 btn text-white font-oldstandard w-2/3 md:w-1/3 lg:w-1/2 px-4 py-2 rounded transition-colors duration-300 hover:bg-green-600"
+              className="bg-green-500 btn
+               text-white font-oldstandard hidden lg:block md:block px-4 py-2 rounded transition-colors duration-300
+                hover:bg-green-600"
             >
               Download Resume
             </a>
