@@ -13,9 +13,11 @@ const Contact = () => {
   return (
     <div className="py-10 md:py-20">
       {/* Title Section */}
-      <div className="text-center mb-10 space-y-4" data-aos="zoom-in-right">
-        <h2 className="text-3xl md:text-4xl font-bold uppercase font-oldstandard">Contact ME</h2>
-        <p className="text-xl md:text-2xl">Please Contact Me and learn more about me</p>
+      <div className="text-center  mb-12 space-y-6">
+        <h2 className="text-[15px] md:text-[24px] lg:text-[24px] font-bold font-oldstandard">CONTACT ME</h2>
+        <p className="font-oldstandard text-sm md:text-[22px] lg:text-[24px]">
+          Please Contact Me and Learn More about Me!
+        </p>
       </div>
 
       <div className="container mx-auto px-4">
@@ -23,44 +25,61 @@ const Contact = () => {
           {/* Left Column - Contact Info */}
           <div className="flex flex-col  bg-slate-800 shadow-lg p-6 rounded-lg space-y-5" data-aos="zoom-in-left">
             <div className="space-y-4">
-              <h2 className="text-2xl md:text-3xl font-oldstandard font-bold">CONTACT ME HERE</h2>
+              <h2 className="text-[15px] md:text-[24px] lg:text-[24px] font-oldstandard font-bold">CONTACT ME HERE</h2>
               <p className="text-lg md:text-xl">For network consultancy services, feel free to get in touch.</p>
             </div>
 
             {/* Contact Information */}
             <div className="space-y-4" data-aos="zoom-out-up">
-              <div className="flex gap-4 items-center">
-                <FaRegAddressCard className="text-2xl text-green-300" />
-                <p className="text-lg md:text-xl font-oldstandard">Location Saver, Ashulia, Dhaka</p>
-              </div>
-              <div className="flex gap-4  items-center">
-                <MdOutlineMail className="text-2xl text-green-300" />
-                <p className="text-lg md:text-xl font-oldstandard">kamruzzamancse22@gmail.com</p>
-              </div>
-              <div className="flex gap-4 items-center">
-                <IoIosContacts className="text-2xl text-green-300" />
-                <p className="text-lg md:text-xl font-oldstandard">01935024654</p>
-              </div>
-              <div className="flex gap-4 items-center">
-                <GrLanguage className="text-2xl text-green-300" />
-                <p className="text-lg md:text-xl font-oldstandard">Bangla, English</p>
-              </div>
+  <div className="flex gap-4 items-center">
+    <FaRegAddressCard className="text-2xl sm:text-3xl md:text-4xl text-green-300" />
+    <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-oldstandard">Location Saver, Ashulia, Dhaka</p>
+  </div>
 
-              {/* Social Media Icons */}
-              <div className="flex flex-col md:flex-row lg:flex-row gap-5 mb-10">
-                <Link to="https://www.facebook.com/kamrulhasan.labib" target="_blank" rel="noopener noreferrer" 
-                className="bg-green-100 sm:bg-none text-white p-3 lg:p-3
-                 rounded-full hover:bg-slate-700 transition-all">
-                  <FaFacebookF size={24} className="text-blue-600"/>
-                </Link>
-                <Link to="https://www.youtube.com/@user-wx4cl7eu9q" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
-                  <FaYoutube size={24} className="text-red-600"/>
-                </Link>
-                <Link to="https://www.linkedin.com/in/md-kamruzzaman-298786249/" target="_blank" rel="noopener noreferrer" className="bg-green-100 text-white p-3 rounded-full hover:bg-slate-700 transition-all">
-                  <FaLinkedinIn size={24} className="text-blue-600"/>
-                </Link>
-              </div>
-            </div>
+  <div className="flex gap-4 items-center">
+    <MdOutlineMail className="text-2xl sm:text-3xl md:text-4xl text-green-300" />
+    <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-oldstandard">kamruzzamancse22@gmail.com</p>
+  </div>
+
+  <div className="flex gap-4 items-center">
+    <IoIosContacts className="text-2xl sm:text-3xl md:text-4xl text-green-300" />
+    <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-oldstandard">01935024654</p>
+  </div>
+
+  <div className="flex gap-4 items-center">
+    <GrLanguage className="text-2xl sm:text-3xl md:text-4xl text-green-300" />
+    <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-oldstandard">Bangla, English</p>
+  </div>
+
+  {/* Social Media Icons */}
+  <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row gap-4 sm:gap-5 mb-10">
+    <Link
+      to="https://www.facebook.com/kamrulhasan.labib"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-2 sm:p-3 lg:p-4 text-white rounded-full hover:bg-slate-700 transition-all"
+    >
+      <FaFacebookF size={24} className="text-blue-600" />
+    </Link>
+    <Link
+      to="https://www.youtube.com/@user-wx4cl7eu9q"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-2 sm:p-3 lg:p-4 hover:bg-slate-700 transition-all"
+    >
+      <FaYoutube size={24} className="text-red-600" />
+    </Link>
+    <Link
+      to="https://www.linkedin.com/in/md-kamruzzaman-298786249/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-2 sm:p-3 lg:p-4"
+    >
+      <FaLinkedinIn size={24} className="text-blue-600" />
+    </Link>
+  </div>
+</div>
+
           </div>
 
           {/* Right Column - Contact Form */}

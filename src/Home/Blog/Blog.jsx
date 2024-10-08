@@ -9,9 +9,11 @@ const Blog = () => {
   }, []);
   return (
     <div className="py-20">
-      <div className="text-center mb-10 space-y-4" data-aos="zoom-in-right">
-        <h2 className="text-4xl font-bold">My Blog</h2>
-        <p className="text-2xl">Discover my thoughts on web development and more.</p>
+       <div className="text-center  mb-12 space-y-6">
+        <h2 className="text-[15px] md:text-[24px] lg:text-[24px] font-bold font-oldstandard">MY BLOG</h2>
+        <p className="font-oldstandard text-sm md:text-[22px] lg:text-[24px]">
+          Check out my projects below and feel free to get in touch for collaborations or inquiries
+        </p>
       </div>
       <div className="container mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-20 md:mx-20 lg:mx-10">

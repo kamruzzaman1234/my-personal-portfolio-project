@@ -13,7 +13,7 @@ const BlogPost = () => {
   return (
     <div className="container mx-auto py-20">
       <div className=" shadow-md rounded-lg p-6">
-        <h1 className="text-3xl font-oldstandard font-bold mb-4">Blog Post Title</h1>
+        <h1 className="text-[18px] md:text-[28] lg:text-4xl font-oldstandard uppercase font-bold">Blog Post Title</h1>
         <p className=" mb-6 text-white">This is the detailed content of the blog post.</p>
 
         {/* Comment Section */}

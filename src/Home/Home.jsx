@@ -69,9 +69,8 @@ const Home = () => {
               <a
               href="/path/to/yourfile.pdf"  // Provide the actual download URL
               download="resume.pdf"
-              className="bg-green-500 btn
-               text-white font-oldstandard hidden lg:block md:block px-4 py-2 rounded transition-colors duration-300
-                hover:bg-green-600"
+              className="bg-green-500 px-4 py-3 font-bold text-center
+              text-[16px] md:text-[20px] lg:text-[22px] rounded-lg hidden md:inline-block lg:inline-block"
             >
               Download Resume
             </a>

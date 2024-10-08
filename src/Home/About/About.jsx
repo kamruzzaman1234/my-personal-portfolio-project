@@ -50,13 +50,11 @@ const About = () => {
                 </Link>
               </div>
 
-            <a
+              <a
               href="/path/to/yourfile.pdf"  // Provide the actual download URL
               download="resume.pdf"
-              className="bg-green-500 btn
-               text-white font-oldstandard 
-                px-4 py-2 rounded transition-colors
-                hidden md:block lg:block duration-300 hover:bg-green-600"
+              className="bg-green-500 px-4 py-3 font-bold text-center
+              text-[16px] md:text-[20px] lg:text-[22px] rounded-lg hidden md:inline-block lg:inline-block"
             >
               Download Resume
             </a>
@@ -70,40 +68,41 @@ const About = () => {
               {/* Web Design */}
               <div className="space-y-3 items-center 
                bg-slate-800 flex flex-col hover:bg-green-500 
-               justify-start lg:justify-center border-2 py-8  px-20 lg:px-0 md:px-0
+               justify-start lg:justify-center border-2 py-8 
+                px-20 lg:px-0 md:px-0 hover:text-white
                rounded-lg transition-colors duration-300">
                 <FaCode className="text-4xl md:text-4xl lg:text-6xl text-white font-bold mb-6"/>
-                <h2 className="text-[14px] md:text-[22px] lg:text-[26px] text-green-500 font-oldstandard uppercase hover:text-white  font-bold">Web Design</h2>
+                <h2 className="text-[14px] md:text-[22px] lg:text-[26px]  font-oldstandard uppercase   font-bold">Web Design</h2>
                 <p className="text-[17px] font-oldstandard">Its gain this html, css, js , tailwind css</p>
               </div>
 
               {/* Graphic Design */}
-              <div className="space-y-3 items-center 
+              <div className="space-y-3 items-center hover:text-white
                bg-slate-800 flex flex-col hover:bg-green-500 
                justify-start lg:justify-center border-2 py-8  px-20 lg:px-0 md:px-0
                rounded-lg transition-colors duration-300">
-                <SiCairographics className="text-4xl md:text-4xl lg:text-6xl text-white mb-6 font-bold"/>
-                <h2 className="text-[14px] md:text=[22px] lg:text[26px] text-green-500 font-oldstandard hover:text-white  font-bold uppercase">Graphics Design</h2>
+                <SiCairographics className="text-4xl md:text-4xl lg:text-6xl text-white  mb-6 font-bold"/>
+                <h2 className="text-[14px] md:text=[22px] lg:text[26px]  font-oldstandard hover:text-white  font-bold uppercase">Graphics Design</h2>
                 <p className="text-[17px] font-oldstandard">Its gain this html, css, js , tailwind css</p>
               </div>
 
               {/* MS Word */}
-              <div className="space-y-3 items-center 
+              <div className="space-y-3 items-center hover:text-white
                bg-slate-800 flex flex-col hover:bg-green-500 
                justify-start lg:justify-center border-2 py-8  px-20 lg:px-0 md:px-0
                rounded-lg transition-colors duration-300">
                 <FaRegFileWord className="text-4xl md:text-4xl lg:text-6xl text-white mb-6 font-bold"/>
-                <h2 className="text-[14px] md:text-[22px] lg:text-[26px] text-green-500 hover:text-white font-oldstandard font-bold">MS WORD</h2>
+                <h2 className="text-[14px] md:text-[22px] lg:text-[26px]  hover:text-white font-oldstandard font-bold">MS WORD</h2>
                 <p className="text-[17px] font-oldstandard">Its gain this html, css, js , tailwind css</p>
               </div>
 
               {/* Problem Solving */}
-              <div className="space-y-3 items-center 
+              <div className="space-y-3 items-center hover:text-white
                bg-slate-800 flex flex-col hover:bg-green-500 
                justify-start lg:justify-center border-2 py-8  px-20 lg:px-0 md:px-0
                rounded-lg transition-colors duration-300">
                 <FaLaptopCode className="text-4xl md:text-4xl lg:text-6xl text-white mb-6 font-bold"/>
-                <h2 className="text-[14px] md:text-[22px] lg:text-[26px] text-green-500 font-oldstandard hover:text-white  font-bold uppercase">Problem Solving</h2>
+                <h2 className="text-[14px] md:text-[22px] lg:text-[26px]  font-oldstandard hover:text-white  font-bold uppercase">Problem Solving</h2>
                 <p className="text-[17px] font-oldstandard">Its gain this html, css, js , tailwind css</p>
               </div>
             </div>
