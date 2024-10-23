@@ -1,111 +1,121 @@
-import { FaFacebookF, FaYoutube, FaLinkedinIn, FaRegAddressCard } from 'react-icons/fa';
-import { MdOutlineMail } from 'react-icons/md';
-import { IoIosContacts } from 'react-icons/io';
-import { GrLanguage } from 'react-icons/gr';
+import React from 'react';
+import { FaLinkedin, FaGithub, FaTwitter, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { FaFacebookF, FaYoutube, FaLinkedinIn, FaRegAddressCard } from 'react-icons/fa';
+
 const Contact = () => {
-  useEffect(() => {
-    AOS.init(); 
-  }, []);
   return (
-    <div className="py-10 md:py-20">
-      {/* Title Section */}
-      <div className="text-center  mb-12 space-y-6">
-        <h2 className="text-[15px] md:text-[24px] lg:text-[24px] font-bold font-oldstandard">CONTACT ME</h2>
-        <p className="font-oldstandard text-sm md:text-[22px] lg:text-[24px]">
-          Please Contact Me and Learn More about Me!
-        </p>
-      </div>
+    <div className="bg-gray-100 min-h-screen">
+      {/* Hero Section */}
+      <header className="bg-gray-900 text-white py-16 mt-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <h1 className="text-5xl font-bold mb-4">Get in Touch</h1>
+          <p className="text-lg">I'd love to hear from you! Whether it's a project, job opportunity, or just a chat, feel free to reach out.</p>
+        </div>
+      </header>
 
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mx-20 md:mx-20 lg:mx-0">
-          {/* Left Column - Contact Info */}
-          <div className="flex flex-col  bg-slate-800 shadow-lg p-6 rounded-lg space-y-5" data-aos="zoom-in-left">
-            <div className="space-y-4">
-              <h2 className="text-[15px] md:text-[24px] lg:text-[24px] font-oldstandard font-bold">CONTACT ME HERE</h2>
-              <p className="text-lg md:text-xl">For network consultancy services, feel free to get in touch.</p>
-            </div>
-
-            {/* Contact Information */}
-            <div className="space-y-4" data-aos="zoom-out-up">
-  <div className="flex gap-4 items-center">
-    <FaRegAddressCard className="text-2xl sm:text-3xl md:text-4xl text-green-300" />
-    <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-oldstandard">Location Saver, Ashulia, Dhaka</p>
-  </div>
-
-  <div className="flex gap-4 items-center">
-    <MdOutlineMail className="text-2xl sm:text-3xl md:text-4xl text-green-300" />
-    <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-oldstandard">kamruzzamancse22@gmail.com</p>
-  </div>
-
-  <div className="flex gap-4 items-center">
-    <IoIosContacts className="text-2xl sm:text-3xl md:text-4xl text-green-300" />
-    <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-oldstandard">01935024654</p>
-  </div>
-
-  <div className="flex gap-4 items-center">
-    <GrLanguage className="text-2xl sm:text-3xl md:text-4xl text-green-300" />
-    <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-oldstandard">Bangla, English</p>
-  </div>
-
-  {/* Social Media Icons */}
-  <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row gap-4 sm:gap-5 mb-10">
-    <Link
-      to="https://www.facebook.com/kamrulhasan.labib"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="p-2 sm:p-3 lg:p-4 text-white rounded-full hover:bg-slate-700 transition-all"
-    >
-      <FaFacebookF size={24} className="text-blue-600" />
-    </Link>
-    <Link
-      to="https://www.youtube.com/@user-wx4cl7eu9q"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="p-2 sm:p-3 lg:p-4 hover:bg-slate-700 transition-all"
-    >
-      <FaYoutube size={24} className="text-red-600" />
-    </Link>
-    <Link
-      to="https://www.linkedin.com/in/md-kamruzzaman-298786249/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="p-2 sm:p-3 lg:p-4"
-    >
-      <FaLinkedinIn size={24} className="text-blue-600" />
-    </Link>
-  </div>
-</div>
-
-          </div>
-
-          {/* Right Column - Contact Form */}
-          <div className="" data-aos="zoom-out">
-            <form action="">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="form-control">
-                  <input type="text" placeholder="YOUR NAME" name="name" className="input input-bordered w-full bg-slate-700 text-white rounded-lg px-4 py-2" />
-                </div>
-                <div className="form-control">
-                  <input type="email" placeholder="YOUR EMAIL" name="email" className="input input-bordered w-full bg-slate-700 text-white rounded-lg px-4 py-2" />
-                </div>
-                <div className="form-control md:col-span-2">
-                  <input type="text" placeholder="ENTER SUBJECT HERE" name="subject" className="input input-bordered w-full bg-slate-700 text-white rounded-lg px-4 py-2" />
-                </div>
-                <div className="form-control md:col-span-2">
-                  <textarea name="message" rows="6" placeholder="ENTER MESSAGE" className="bg-slate-700 text-white rounded-lg px-4 py-2 w-full" />
-                </div>
-                <div className="form-control md:col-span-2">
-                  <button type="submit" className="bg-green-600 px-4 py-2 rounded-lg text-white hover:bg-green-700 transition-all w-full">Send Message</button>
-                </div>
+      {/* Contact Form and Details Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+          {/* Contact Form */}
+          <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
+            <h2 className="text-3xl font-bold mb-6 text-[#FF5A3A]">Contact Me</h2>
+            <form className="space-y-6">
+              <div>
+                <label className="block text-sm font-semibold text-gray-600">Your Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+                />
               </div>
+              <div>
+                <label className="block text-sm font-semibold text-gray-600">Your Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold text-gray-600">Message</label>
+                <textarea
+                  placeholder="Enter your message"
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 h-32"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="w-full text-white font-bold py-3 rounded-lg bg-[#FF5A3A] transition-all"
+              >
+                Send Message
+              </button>
             </form>
           </div>
+
+          {/* Contact Details */}
+          <div className="space-y-8">
+            <div>
+              <h2 className="text-3xl font-bold text-[#FF5A3A] mb-4">Contact Details</h2>
+              <p className="text-gray-600 mb-2">Feel free to contact me directly through the following methods:</p>
+              <ul className="text-gray-800">
+                <li className="flex items-center space-x-3 mb-2">
+                  <FaPhone className="text-purple-600" /> <span>+880-1234-567890</span>
+                </li>
+                <li className="flex items-center space-x-3 mb-2">
+                  <FaEnvelope className="text-purple-600" /> <span>labib.kamruzzaman@example.com</span>
+                </li>
+                <li className="flex items-center space-x-3 mb-2">
+                  <FaMapMarkerAlt className="text-purple-600" /> <span>Rangpur, Bangladesh</span>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h2 className="text-3xl font-bold text-[#FF5A3A] mb-4">Social Media</h2>
+              <p className="text-gray-600 mb-4">You can also find me on these platforms:</p>
+       <div className="flex gap-6 my-7 ">
+      {/* Facebook */}
+      <Link
+        to="https://www.facebook.com/kamrulhasan.labib"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group bg-gradient-to-r from-blue-500 to-blue-700 p-3 rounded-full transition-all duration-300 transform hover:scale-110 shadow-lg"
+      >
+        <FaFacebookF size={24} className="text-white group-hover:rotate-12 transition-all" />
+      </Link>
+
+      {/* YouTube */}
+      <Link
+        to="https://www.youtube.com/@user-wx4cl7eu9q"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group bg-gradient-to-r from-red-500 to-red-700 p-3 rounded-full transition-all duration-300 transform hover:scale-110 shadow-lg"
+      >
+        <FaYoutube size={24} className="text-white group-hover:rotate-12 transition-all" />
+      </Link>
+
+      {/* LinkedIn */}
+      <Link
+        to="https://www.linkedin.com/in/md-kamruzzaman-298786249/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group bg-gradient-to-r from-blue-600 to-blue-800 p-3 rounded-full transition-all duration-300 transform hover:scale-110 shadow-lg"
+      >
+        <FaLinkedinIn size={24} className="text-white group-hover:rotate-12 transition-all" />
+      </Link>
+    </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="max-w-7xl mx-auto text-center">
+          <p>© 2024 Labib Kamruzzaman. All Rights Reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 };

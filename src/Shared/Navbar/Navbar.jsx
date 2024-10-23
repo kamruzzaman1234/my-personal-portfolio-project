@@ -62,12 +62,12 @@ const Navbar = () => {
               aria-label="Home"
               onClick={handleNavClick}
               className={({ isActive }) =>
-                `flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 p-2 md:p-3 border-2 rounded-full transition duration-300 ease-in-out ${
-                  isActive ? "bg-green-500 border-green-500 text-white" : "bg-transparent border-green-800 text-white"
+                `flex items-center justify-center w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 p-2 md:p-3 border-2 rounded-full transition duration-300 ease-in-out ${
+                  isActive ? "bg-[#FF5A3A] " : "bg-transparent"
                 } hover:bg-green-600`
               }
             >
-              <IoHomeOutline className="text-[17px] md:text-2xl lg:text-3xl" />
+              <IoHomeOutline className="text-[17px] text-black md:text-[18px] font-bold lg:text-[18px]" />
             </NavLink>
           </li>
           <li>
@@ -76,12 +76,12 @@ const Navbar = () => {
               aria-label="About"
               onClick={handleNavClick}
               className={({ isActive }) =>
-                `flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 p-2 md:p-3 border-2 rounded-full transition duration-300 ease-in-out ${
-                  isActive ? "bg-green-500 border-green-500 text-white" : "bg-transparent border-green-800 text-white"
+                `flex items-center justify-center w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 p-2 md:p-3 border-2 rounded-full transition duration-300 ease-in-out ${
+                  isActive ? "bg-[#FF5A3A]" : "bg-transparent"
                 } hover:bg-green-600`
               }
             >
-              <CiFaceMeh className="text-[17px] md:text-2xl lg:text-3xl" />
+              <CiFaceMeh className="text-[17px] md:text-[18px] font-bold lg:text-[18px]" />
             </NavLink>
           </li>
           <li>
@@ -90,12 +90,12 @@ const Navbar = () => {
               aria-label="Portfolio"
               onClick={handleNavClick}
               className={({ isActive }) =>
-                `flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 p-2 md:p-3 border-2 rounded-full transition duration-300 ease-in-out ${
-                  isActive ? "bg-green-500 border-green-500 text-white" : "bg-transparent border-green-800 text-white"
+                `flex items-center justify-center w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 p-2 md:p-3 border-2 rounded-full transition duration-300 ease-in-out ${
+                  isActive ? "bg-[#FF5A3A] " : "bg-transparent"
                 } hover:bg-green-600`
               }
             >
-              <MdContactMail className="text-[17px] md:text-2xl lg:text-3xl" />
+              <MdContactMail className="text-[17px] md:text-[18px] font-bold lg:text-[18px]" />
             </NavLink>
           </li>
           <li>
@@ -104,12 +104,12 @@ const Navbar = () => {
               aria-label="Blog"
               onClick={handleNavClick}
               className={({ isActive }) =>
-                `flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 p-2 md:p-3 border-2 rounded-full transition duration-300 ease-in-out ${
-                  isActive ? "bg-green-500 border-green-500 text-white" : "bg-transparent border-green-800 text-white"
+                `flex items-center justify-center w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 p-2 md:p-3 border-2 rounded-full transition duration-300 ease-in-out ${
+                  isActive ? "bg-[#FF5A3A] " : "bg-transparent"
                 } hover:bg-green-600`
               }
             >
-              <FaBlogger className="text-[17px] md:text-2xl lg:text-3xl" />
+              <FaBlogger className="text-[17px] md:text-[18px] font-bold lg:text-[18px]" />
             </NavLink>
           </li>
           <li>
@@ -118,12 +118,14 @@ const Navbar = () => {
               aria-label="Contact"
               onClick={handleNavClick}
               className={({ isActive }) =>
-                `flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 p-2 md:p-3 border-2 rounded-full transition duration-300 ease-in-out ${
-                  isActive ? "bg-green-500 border-green-500 text-white" : "bg-transparent border-green-800 text-white"
+                `flex items-center justify-center w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 p-2 md:p-3 border-2 
+              rounded-full transition duration-300 ease-in-out ${
+                  isActive ? "bg-[#FF5A3A] " : 
+                  "bg-transparent"
                 } hover:bg-green-600`
               }
             >
-              <RiExportFill className="text-[17px] md:text-2xl lg:text-3xl" />
+              <RiExportFill className="text-[17px] md:text-[18px] font-bold lg:text-[18px]" />
             </NavLink>
           </li>
         </ul>

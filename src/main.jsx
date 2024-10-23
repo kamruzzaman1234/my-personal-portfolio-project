@@ -48,10 +48,10 @@ const router = createBrowserRouter([
   },
 ]);
 
-// Render the application with a responsive container
+// Render the application with a responsive max-w-7xl
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* Responsive container that adjusts according to screen size */}
+    {/* Responsive max-w-7xl that adjusts according to screen size */}
     <div className="max-w-full lg:max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <RouterProvider router={router} />
     </div>

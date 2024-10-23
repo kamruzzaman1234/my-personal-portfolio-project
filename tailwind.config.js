@@ -7,7 +7,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        oldstandard: ['"Old Standard TT"', 'serif'],
+        nunito: ['Nunito', 'serif'], 
+      },
+      fontWeight: {
+        'normal': 400, 
+        'medium': 600, 
+        'bold': 700,    
       },
     },
   },
