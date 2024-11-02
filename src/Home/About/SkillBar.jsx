@@ -18,9 +18,9 @@ const SkillBar = ({ level, name, color }) => {
   return (
     <div className="mb-4">
       <p className="font-semibold">
-        {name} <span className="text-gray-500">{level}</span>
+        {name} <span className="text-white">{level}</span>
       </p>
-      <div className="w-full bg-gray-300 rounded-full h-6">
+      <div className="w-full bg-white rounded-full h-6">
         <div
           className={`${color} h-6 rounded-full progress-bar`}
           style={{ '--progress': level }}

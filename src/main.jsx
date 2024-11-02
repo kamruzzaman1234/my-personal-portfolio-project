@@ -52,7 +52,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* Responsive max-w-7xl that adjusts according to screen size */}
-    <div className="max-w-full lg:max-w-6xl xl:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-full lg:max-w-6xl xl:max-w-7xl mx-8 md:mx-16 lg:mx-auto px-4 sm:px-6 lg:px-8">
       <RouterProvider router={router} />
     </div>
   </React.StrictMode>

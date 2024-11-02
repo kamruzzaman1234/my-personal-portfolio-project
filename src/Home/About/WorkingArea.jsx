@@ -1,6 +1,6 @@
 const WorkingArea = ()=>{
     return(
-        <div className="bg-[#545454] px-10 py-20">
+        <div className="bg-[#545454] px-10 py-20 rounded-lg">
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10">
                 <div className="">
                     <h2 className="text-[20px] text-[#FF5A3A] font-bold">.Working Experience</h2>

@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
       {/* Hero Section */}
-      <header className="bg-gray-900 text-white py-16 mt-6">
-        <div className="max-w-7xl mx-auto text-center">
+      <header className="bg-gray-900 text-white py-10">
+        <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto text-center">
           <h1 className="text-5xl font-bold mb-4">Get in Touch</h1>
           <p className="text-lg">I'd love to hear from you! Whether it's a project, job opportunity, or just a chat, feel free to reach out.</p>
         </div>
@@ -16,7 +16,7 @@ const Contact = () => {
 
       {/* Contact Form and Details Section */}
       <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
           {/* Contact Form */}
           <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold mb-6 text-[#FF5A3A]">Contact Me</h2>
@@ -112,7 +112,7 @@ const Contact = () => {
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-8">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto text-center">
           <p>© 2024 Labib Kamruzzaman. All Rights Reserved.</p>
         </div>
       </footer>

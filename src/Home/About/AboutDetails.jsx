@@ -5,7 +5,7 @@ const AboutDetails = ()=>{
     return(
         <div className="bg-black py-[20px] rounded-lg">
             <div className="text-center">
-                 <h2 className="font-bold text-[60px] text-white">MD KAMRUZZAMAN</h2> =
+                 <h2 className="font-bold text-[30px] lg:text-[60px] text-white">MD KAMRUZZAMAN</h2> =
                 <h4 className="font-bold text-[#FF5A3A] text-[20px]">
        <TypeAnimation
       sequence={[
@@ -28,8 +28,8 @@ const AboutDetails = ()=>{
     />
                 </h4>        
             </div>
-            <div className="flex justify-between items-center">
-                <div className="w-[240px] flex flex-col mx-auto">
+            <div className="flex flex-col lg:flex-row gap-9 justify-between items-center">
+                <div className="w-[240px] flex flex-col mx-8 md:mx-16 lg:mx-auto">
                     <div className="space-y-3">
                         <Link to="" className="underline text-[#FF5A3A]
                      font-bold text-[20px]">FrontEnd Developer</Link>
@@ -47,7 +47,7 @@ const AboutDetails = ()=>{
                 className="w-[480px] h-[631px]"/>
             </div>
 
-            <div className="w-[240px] flex mx-auto">
+            <div className="w-[240px] flex mx-8 rounded-lg md:mx-16 lg:mx-auto">
                     <div className="space-y-3">
                         <Link to="" className="underline text-[#FF5A3A]
                      font-bold text-[20px]">UI Designer</Link>

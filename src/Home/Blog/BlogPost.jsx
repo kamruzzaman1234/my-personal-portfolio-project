@@ -30,10 +30,10 @@ const blogPosts = [
 
 const BlogPost = () => {
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="">
       {/* Hero Section */}
-      <header className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">
-        <div className="max-w-7xl mx-auto text-center">
+      <header className="">
+        <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto ">
           <h1 className="text-5xl font-bold mb-4">Labib Kamruzzaman</h1>
           <p className="text-lg mb-6">Frontend Developer | React | Tailwind CSS</p>
           <a
@@ -46,12 +46,12 @@ const BlogPost = () => {
       </header>
 
       {/* Blog Section */}
-      <section id="blogs" className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+      <section id="blogs" className="py-16 px-10 bg-gray-50">
+        <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Latest Blog Posts</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {blogPosts.map((post, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div key={index} className="bg-white px-10 rounded-lg shadow-lg overflow-hidden">
                 <img
                   src={post.image}
                   alt={post.title}
@@ -76,7 +76,7 @@ const BlogPost = () => {
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-10">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto text-center">
           <h3 className="text-lg mb-4">Connect with me</h3>
           <div className="flex justify-center space-x-6">
             <a

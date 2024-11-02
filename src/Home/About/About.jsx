@@ -28,17 +28,17 @@ const About = () => {
   return (
     <div className="py-20">
       <div className="text-center mb-10">
-        <h2 className="text-[18px] md:text-[28] lg:text-4xl font-oldstandard text-[#FF5A3A] uppercase font-bold">About Me</h2>
+        <h2 className="text-[18px] md:text-[28] lg:text-4xl font-oldstandard text-[#FF5A3A]  uppercase font-bold">About Me</h2>
       </div>
-      <div className="max-w-7xl mx-auto mt-10">
+      <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto mt-10">
         <AboutDetails></AboutDetails>
         <WorkingArea></WorkingArea>
       </div>
 
       {/* Skills Section */}
-      <div className="max-w-7xl mx-auto mt-10">
+      <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto mt-10">
         <div className="text-center mb-10" data-aos="zoom-out-up">
-          <h2 className="text-[14px] lg:text-2xl md:text-2xl font-oldstandard font-bold">MY SKILLS</h2>
+          <h2 className="text-[14px] lg:text-2xl md:text-2xl font-oldstandard text-white font-bold">MY SKILLS</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 mx-20 md:mx-20 lg:mx-0 lg:grid-cols-2 gap-6">
           {skills.map((skill, index) => (
@@ -52,12 +52,12 @@ const About = () => {
         </div>
       </div>
       {/* My time line area */}
-      <div className="max-w-7xl mx-auto mt-10">
+      <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto mt-10">
       <div className="text-center mb-10">
-          <h2 className="text-[14px] lg:text-2xl md:text-2xl font-oldstandard font-bold">MY TIMELINE</h2>
+          <h2 className="text-[14px] lg:text-2xl md:text-2xl font-oldstandard text-white font-bold">MY TIMELINE</h2>
       </div>
       <ul className="steps steps-vertical px-24 md:px-20 lg:px-0">
-  <li className="step step-primary">
+  <li className="step step-primary text-white">
     Programming Hero (1-6 month)
     </li>
  

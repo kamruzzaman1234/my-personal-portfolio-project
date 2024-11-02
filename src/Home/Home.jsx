@@ -13,8 +13,8 @@ const Home = () => {
     AOS.init(); 
   }, []);
   return (
-    <div className=" text-white flex items-center justify-center py-20">
-      <div className="max-w-7xl mx-auto">
+    <div className="flex items-center justify-center py-20">
+      <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3  gap-8">
           
           {/* Column 1 - Image */}
@@ -36,7 +36,7 @@ const Home = () => {
 
           {/* Column 2 - Name, Description, and Download Button */}
          
-          <div className=" border-[#FF5A3A] col-span-2 rounded-lg">
+          <div className=" border-[#FF5A3A] col-span-2 text-white rounded-lg">
               <div>
               <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold text-[#FF5A3A] mb-5 leading-tight">
               Hi, I'm Labib. <span className="text-green-500 text-[30px]">  <TypeAnimation
@@ -59,7 +59,7 @@ const Home = () => {
       repeat={Infinity}
     /></span>
             </h1>
-            <p className="text-lg font-semibold  text-black">
+            <p className="text-lg font-semibold  text-white">
               I’m Kamruzzaman, a passionate Frontend Developer specializing in building
               responsive and user-friendly web applications. With a strong foundation in 
               HTML5, CSS3, JavaScript, and modern libraries like React.js, I enjoy crafting 

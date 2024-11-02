@@ -35,7 +35,7 @@ const Portfolio = () => {
     <div className="bg-gray-900 min-h-screen font-sans">
       {/* Header */}
       <header className="bg-gray-900 text-white py-8 rounded-lg mt-6">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto text-center">
           <h1 className="text-5xl text-[#FF5A3A] font-bold">Labib Kamruzzaman</h1>
           <p className="text-lg mt-2">Frontend Developer | React & Tailwind Specialist</p>
         </div>
@@ -43,9 +43,9 @@ const Portfolio = () => {
 
       {/* About Section */}
       <section className="bg-white py-16">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6 text-[#FF5A3A]">My Portfolio</h2>
-          <p className="text-gray-600 max-w-3xl mx-auto">
+          <p className="text-gray-600 max-w-3xl mx-8 md:mx-16 lg:mx-auto">
             I am a passionate frontend developer with a focus on creating modern, responsive, and user-friendly interfaces using React and Tailwind CSS. With a keen eye for design and a strong technical foundation, I turn complex ideas into seamless user experiences.
           </p>
         </div>
@@ -53,7 +53,7 @@ const Portfolio = () => {
 
       {/* Projects Section */}
       <section className="bg-slate-900  py-16">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto">
           <h2 className="text-4xl font-bold text-center text-[#Ff5A3A] mb-12">Projects </h2>
           <div className="grid grid-cols-1 px-6 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {projects.map((project, index) => (
@@ -92,7 +92,7 @@ const Portfolio = () => {
 
       {/* Footer */}
       <footer className="bg-gray-200 text-white py-8">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto text-center">
           <p className="text-lg text-[#FF5A3A]">© 2024 Labib Kamruzzaman. All Rights Reserved.</p>
           <div className="flex gap-6 my-7 justify-center">
       {/* Facebook */}
