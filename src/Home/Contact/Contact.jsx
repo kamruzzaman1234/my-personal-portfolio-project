@@ -5,7 +5,7 @@ import { FaFacebookF, FaYoutube, FaLinkedinIn, FaRegAddressCard } from 'react-ic
 
 const Contact = () => {
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-slate-900 min-h-screen">
       {/* Hero Section */}
       <header className="bg-gray-900 text-white py-10">
         <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto text-center">

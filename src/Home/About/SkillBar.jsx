@@ -17,7 +17,7 @@ const skills = [
 const SkillBar = ({ level, name, color }) => {
   return (
     <div className="mb-4 px-0 lg:px-20">
-      <p className="font-semibold">
+      <p className="font-semibold text-white">
         {name} <span className="text-white">{level}</span>
       </p>
       <div className="w-full bg-white rounded-full h-6">
