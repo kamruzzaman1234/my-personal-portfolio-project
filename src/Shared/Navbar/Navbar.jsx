@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <div className="relative z-50">
       {/* Hamburger button for small/medium devices */}
-      <div className="fixed top-5 left-5 md:top-10 md:left-10 lg:hidden z-50">
+      <div className="fixed top-5 left-1 md:top-10 md:left-10 lg:hidden z-50">
         <button
           onClick={toggleNavbar}
           className="text-white text-2xl p-2 focus:outline-none"
