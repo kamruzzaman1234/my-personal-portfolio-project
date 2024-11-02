@@ -44,7 +44,7 @@ const AboutDetails = ()=>{
                 </div>
 
                 <div className="">
-                <img src="https://i.ibb.co.com/ccRLrJx/man-3.png" alt="" 
+                <img src="https://i.ibb.co/DC4dYGj/Snapchat-1879419947-removebg-preview-1.png" alt="" 
                 className="w-[480px] h-[631px]"/>
             </div>
 

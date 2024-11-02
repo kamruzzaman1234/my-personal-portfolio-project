@@ -15,14 +15,14 @@ const Contact = () => {
       </header>
 
       {/* Contact Form and Details Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+      <section className="py-16 bg-slate">
+        <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Contact Form */}
-          <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
+          <div className="bg-slate-900 p-8 rounded-lg shadow-lg">
             <h2 className="text-3xl font-bold mb-6 text-[#FF5A3A]">Contact Me</h2>
             <form className="space-y-6">
               <div>
-                <label className="block text-sm font-semibold text-gray-600">Your Name</label>
+                <label className="block text-sm font-semibold text-white">Your Name</label>
                 <input
                   type="text"
                   placeholder="Enter your name"
@@ -30,7 +30,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold text-gray-600">Your Email</label>
+                <label className="block text-sm font-semibold text-white">Your Email</label>
                 <input
                   type="email"
                   placeholder="Enter your email"
@@ -38,7 +38,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold text-gray-600">Message</label>
+                <label className="block text-sm font-semibold text-white">Message</label>
                 <textarea
                   placeholder="Enter your message"
                   className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 h-32"
@@ -54,11 +54,11 @@ const Contact = () => {
           </div>
 
           {/* Contact Details */}
-          <div className="space-y-8">
+          <div className="space-y-8 bg-slate-900 p-8 rounded-lg">
             <div>
               <h2 className="text-3xl font-bold text-[#FF5A3A] mb-4">Contact Details</h2>
-              <p className="text-gray-600 mb-2">Feel free to contact me directly through the following methods:</p>
-              <ul className="text-gray-800">
+              <p className="text-white mb-2">Feel free to contact me directly through the following methods:</p>
+              <ul className="text-white">
                 <li className="flex items-center space-x-3 mb-2">
                   <FaPhone className="text-purple-600" /> <span>+880-1234-567890</span>
                 </li>
@@ -73,7 +73,7 @@ const Contact = () => {
 
             <div>
               <h2 className="text-3xl font-bold text-[#FF5A3A] mb-4">Social Media</h2>
-              <p className="text-gray-600 mb-4">You can also find me on these platforms:</p>
+              <p className="text-white mb-4">You can also find me on these platforms:</p>
        <div className="flex gap-6 my-7 ">
       {/* Facebook */}
       <Link

@@ -67,22 +67,22 @@ const Portfolio = () => {
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-4 text-[#FF5A3A]">{project.title}</h3>
                   <p className="text-white mb-4">{project.description}</p>
-                  <div className="flex flex-col lg:flex-row justify-start lg:justify-between items-center">
+                  <div className="flex gap-3 flex-col lg:flex-row">
                     <Link
                       to={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-white hover:text-gray-900 transition"
+                      className="flex items-center text-white transition btn bg-[#FF5A3A]"
                     >
-                      <FaGithub size={20} className="mr-2 text-[#FF5A3A]" /> GitHub
+                      <FaGithub size={20} className="mr-2" /> GitHub
                     </Link>
                     <Link
                       to={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-white transition"
+                      className="flex items-center text-white transition btn bg-[#FF5A3A]"
                     >
-                      <FaExternalLinkAlt size={20} className="mr-2 text-[#FF5A3A]" /> Live Site
+                      <FaExternalLinkAlt size={20} className="mr-2 " /> Live Site
                     </Link>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ const Portfolio = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-200 text-white py-8">
+      <footer className="bg-slate-900 text-white py-8">
         <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto text-center">
           <p className="text-lg text-[#FF5A3A]">© 2024 Labib Kamruzzaman. All Rights Reserved.</p>
           <div className="flex gap-6 my-7 justify-center">
