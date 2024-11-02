@@ -13,12 +13,12 @@ const projects = [
     image: "https://i.ibb.co.com/Wcp3kLT/Screen-Shot-2024-10-23-at-23-24-02-fullpage.png",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Consultation Services By Doctors",
     description:
       "An e-commerce platform with user-friendly interface and Stripe integration. Built using React, Tailwind CSS, and Node.js.",
-    githubLink: "https://github.com/kamrulhasanlabib/ecommerce-platform",
-    liveLink: "https://ecommerce-platform.com",
-    image: "https://via.placeholder.com/400x300.png?text=E-Commerce+Platform",
+    githubLink: "https://github.com/kamruzzaman1234/Constultion_Services_By_Doctor_Client.git",
+    liveLink: "https://service-by-doctor-project.web.app/",
+    image: "https://i.ibb.co.com/vXz8jGV/Vite-React.png",
   },
   {
     title: "Portfolio Website",
@@ -34,7 +34,7 @@ const Portfolio = () => {
   return (
     <div className="bg-gray-900 min-h-screen font-sans">
       {/* Header */}
-      <header className="bg-gray-900 text-white py-8 rounded-lg mt-6">
+      <header className="bg-gray-900 text-white py-8 rounded-lg ">
         <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto text-center">
           <h1 className="text-5xl text-[#FF5A3A] font-bold">Labib Kamruzzaman</h1>
           <p className="text-lg mt-2">Frontend Developer | React & Tailwind Specialist</p>
