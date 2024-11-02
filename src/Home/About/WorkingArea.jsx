@@ -1,10 +1,11 @@
 const WorkingArea = ()=>{
     return(
-        <div className="bg-[#545454] px-10 py-20 rounded-lg">
+        <div className="bg-slate-900 px-3 lg:px-20 py-20 rounded-lg">
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10">
                 <div className="">
                     <h2 className="text-[20px] text-[#FF5A3A] font-bold">.Working Experience</h2>
-                    <p className="text-white text-[17px] font-bold">I working in 3years experience.Programming solve related in the work</p>
+                    <p className="text-white text-[17px] font-bold">I working in 3years experience.Programming
+                         solve related in the work</p>
                 </div>
                 <div className="">
                     <h2 className="text-[20px] text-[#FF5A3A] font-bold">.Command On</h2>

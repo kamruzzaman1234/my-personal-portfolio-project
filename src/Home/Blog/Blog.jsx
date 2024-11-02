@@ -36,7 +36,7 @@ const Blog = () => {
       {/* Hero Section */}
       <header className="bg-gray-900 text-white py-8">
         <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto text-center">
-          <h1 className="text-5xl text-[#Ff5A3A] font-bold mb-4">Labib Kamruzzaman</h1>
+          <h1 className="text-3xl lg:text-5xl text-[#Ff5A3A] font-bold mb-4">Labib Kamruzzaman</h1>
           <p className="text-lg mb-6">Frontend Developer | React | Tailwind CSS</p>
           <a
             href="#blogs"
@@ -48,12 +48,12 @@ const Blog = () => {
       </header>
 
       {/* Blog Section */}
-      <section id="blogs" className="py-16 bg-gray-50">
+      <section id="blogs" className="py-16 bg-slate-900">
         <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto">
           <h2 className="text-4xl font-bold text-center text-[#FF5A3A] mb-12">Latest Blog Posts</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {blogPosts.map((post, index) => (
-              <div key={index} className="bg-white px-10 rounded-lg shadow-lg overflow-hidden">
+              <div key={index} className="bg-whit rounded-lg shadow-lg overflow-hidden">
                 <img
                   src={post.image}
                   alt={post.title}
@@ -61,14 +61,14 @@ const Blog = () => {
                 />
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3 text-[#FF5A3A]">{post.title}</h3>
-                  <p className="text-gray-600 mb-4">{post.description}</p>
+                  <p className="text-white mb-4">{post.description}</p>
                   <a
                     href={post.link}
                     className="text-blue-600 font-semibold hover:text-blue-800 transition-all"
                   >
                     Read More
                   </a>
-                  <p className="text-sm text-gray-400 mt-3">{post.date}</p>
+                  <p className="text-sm text-white mt-3">{post.date}</p>
                 </div>
               </div>
             ))}

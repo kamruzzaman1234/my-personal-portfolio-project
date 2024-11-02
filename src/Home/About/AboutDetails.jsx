@@ -28,14 +28,15 @@ const AboutDetails = ()=>{
     />
                 </h4>        
             </div>
-            <div className="flex flex-col lg:flex-row gap-9 justify-between items-center">
+            <div className="flex flex-col lg:flex-row gap-9 justify-center lg:justify-between items-center">
                 <div className="w-[240px] flex flex-col mx-8 md:mx-16 lg:mx-auto">
-                    <div className="space-y-3">
-                        <Link to="" className="underline text-[#FF5A3A]
-                     font-bold text-[20px]">FrontEnd Developer</Link>
-                     <p className='text-white font-bold'>I create unique Web Design and Develop website</p>
+                    <div className="space-y-3 px-0 lg:px-8 flex justify-center flex-col items-center">
+                        <Link to="" className="underline text-[#FF5A3A] 
+                     font-bold text-[20px] text-center">FrontEnd Developer</Link>
+                     <p className='text-white font-bold text-center'>I create unique Web Design and 
+                        Develop website</p>
                 </div>
-                <div className="mt-6">
+                <div className="mt-6 flex justify-center items-center">
                 <Link to="" className="bg-[#FF5A3A] 
                       text-white p-3 rounded-lg font-bold">Contact Me</Link>
                 </div>
@@ -48,10 +49,10 @@ const AboutDetails = ()=>{
             </div>
 
             <div className="w-[240px] flex mx-8 rounded-lg md:mx-16 lg:mx-auto">
-                    <div className="space-y-3">
+                    <div className="space-y-3 flex justify-center items-center flex-col">
                         <Link to="" className="underline text-[#FF5A3A]
                      font-bold text-[20px]">UI Designer</Link>
-                     <p className="text-white font-bold">I create unique UI Design. Make My All Project Design.
+                     <p className="text-white font-bold text-center">I create unique UI Design. Make My All Project Design.
                     I create the high quality Design</p>
                     </div>
                 </div>

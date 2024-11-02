@@ -40,7 +40,7 @@ const About = () => {
         <div className="text-center mb-10" data-aos="zoom-out-up">
           <h2 className="text-[14px] lg:text-2xl md:text-2xl font-oldstandard text-white font-bold">MY SKILLS</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 mx-20 md:mx-20 lg:mx-0 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 mx-6 md:mx-10 lg:mx-0 lg:grid-cols-2 gap-6">
           {skills.map((skill, index) => (
             <SkillBar
               key={index}

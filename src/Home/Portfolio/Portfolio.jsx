@@ -5,9 +5,9 @@ import { FaFacebookF, FaYoutube, FaLinkedinIn, FaRegAddressCard } from 'react-ic
 
 const projects = [
   {
-    title: "Real Estate Booking App",
+    title: "Real Estate Booking Website",
     description:
-      "A modern web application for booking properties, built with React, Tailwind CSS, and integrated with a backend API.",
+      "Using HTML, Tailwind CSS, React JS, Node JS, Express JS, Firebase, MongoDB",
     githubLink: "https://github.com/kamruzzaman1234/real-state-project-client.git",
     liveLink: "https://rea-estate-project-8538e.web.app/",
     image: "https://i.ibb.co.com/Wcp3kLT/Screen-Shot-2024-10-23-at-23-24-02-fullpage.png",
@@ -15,7 +15,7 @@ const projects = [
   {
     title: "Consultation Services By Doctors",
     description:
-      "An e-commerce platform with user-friendly interface and Stripe integration. Built using React, Tailwind CSS, and Node.js.",
+      "Using HTML, Tailwind CSS, React JS, Node JS, Express JS, Firebase, MongoDB",
     githubLink: "https://github.com/kamruzzaman1234/Constultion_Services_By_Doctor_Client.git",
     liveLink: "https://service-by-doctor-project.web.app/",
     image: "https://i.ibb.co.com/vXz8jGV/Vite-React.png",
@@ -36,17 +36,19 @@ const Portfolio = () => {
       {/* Header */}
       <header className="bg-gray-900 text-white py-8 rounded-lg ">
         <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto text-center">
-          <h1 className="text-5xl text-[#FF5A3A] font-bold">Labib Kamruzzaman</h1>
+          <h1 className="text-3xl lg:text-5xl text-[#FF5A3A] font-bold">Labib Kamruzzaman</h1>
           <p className="text-lg mt-2">Frontend Developer | React & Tailwind Specialist</p>
         </div>
       </header>
 
       {/* About Section */}
-      <section className="bg-white py-16">
+      <section className="bg-slate-900 py-16">
         <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6 text-[#FF5A3A]">My Portfolio</h2>
-          <p className="text-gray-600 max-w-3xl mx-8 md:mx-16 lg:mx-auto">
-            I am a passionate frontend developer with a focus on creating modern, responsive, and user-friendly interfaces using React and Tailwind CSS. With a keen eye for design and a strong technical foundation, I turn complex ideas into seamless user experiences.
+          <p className="text-white max-w-3xl mx-8 md:mx-16 lg:mx-auto">
+            I am a passionate frontend developer with a focus on creating modern, 
+            responsive, and user-friendly interfaces using React and Tailwind CSS. 
+            With a keen eye for design and a strong technical foundation, I turn complex ideas into seamless user experiences.
           </p>
         </div>
       </section>
@@ -55,30 +57,30 @@ const Portfolio = () => {
       <section className="bg-slate-900  py-16">
         <div className="max-w-7xl mx-8 md:mx-16 lg:mx-auto">
           <h2 className="text-4xl font-bold text-center text-[#Ff5A3A] mb-12">Projects </h2>
-          <div className="grid grid-cols-1 px-2 lg:px-6 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 px-2 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300"
+                className="bg-slate-900 px-0 lg:px-12 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300"
               >
                 <img src={project.image} alt={project.title} className="w-full h-48 object-cover"/>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-4 text-[#FF5A3A]">{project.title}</h3>
-                  <p className="text-gray-600 mb-4">{project.description}</p>
-                  <div className="flex justify-between items-center">
-                    <a
-                      href={project.githubLink}
+                  <p className="text-white mb-4">{project.description}</p>
+                  <div className="flex flex-col lg:flex-row justify-start lg:justify-between items-center">
+                    <Link
+                      to={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-gray-700 hover:text-gray-900 transition"
+                      className="flex items-center text-white hover:text-gray-900 transition"
                     >
                       <FaGithub size={20} className="mr-2 text-[#FF5A3A]" /> GitHub
-                    </a>
+                    </Link>
                     <Link
                       to={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center text-blue-500 hover:text-blue-700 transition"
+                      className="flex items-center text-white transition"
                     >
                       <FaExternalLinkAlt size={20} className="mr-2 text-[#FF5A3A]" /> Live Site
                     </Link>

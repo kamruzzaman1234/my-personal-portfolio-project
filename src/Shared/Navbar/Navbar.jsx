@@ -51,7 +51,7 @@ const Navbar = () => {
 
       {/* Navbar for all devices */}
       <div 
-        className={`fixed top-1/2 transform -translate-y-1/2 w-16 md:w-48 lg:w-64 transition-all duration-500 ease-in-out bg-transparent ${
+        className={`fixed top-[500px] lg:top-1/2 transform -translate-y-1/2 w-16 md:w-48 lg:w-64 transition-all duration-500 ease-in-out bg-transparent ${
           isOpen ? "left-8" : "left-[-250px] lg:left-8"
         } md:left-8 lg:left-8`}
       >
