@@ -11,16 +11,16 @@ import 'aos/dist/aos.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 268); // Detect screen size
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); // Adjusted for medium and smaller devices
 
   // Dynamically update screen size
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 268);
+      setIsMobile(window.innerWidth <= 768);
     };
-    
+
     window.addEventListener('resize', handleResize);
-    
+
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -32,8 +32,7 @@ const Navbar = () => {
 
   const handleNavClick = () => {
     if (isMobile) {
-      // Close navbar only on mobile devices
-      setIsOpen(false);
+      setIsOpen(false); // Close navbar on mobile
     }
   };
 
@@ -50,98 +49,38 @@ const Navbar = () => {
       </div>
 
       {/* Navbar for all devices */}
-      <div 
-        className={`fixed top-[500px] lg:top-1/2 transform -translate-y-1/2 w-16 md:w-48 lg:w-64 transition-all duration-500 ease-in-out bg-transparent ${
-          isOpen ? "left-8" : "left-[-250px] lg:left-8"
-        } md:left-8 lg:left-8`}
+      <div
+        className={`fixed transform transition-all duration-500 ease-in-out bg-transparent 
+          ${isOpen ? "left-8" : "left-[-250px] lg:left-8"}
+          top-[35%] md:top-[30%] lg:top-[40%] 
+          w-16 md:w-48 lg:w-64`}
       >
-        <ul className="space-y-6">
-          <li>
-            <NavLink
-              to="/"
-              aria-label="Home"
-              onClick={handleNavClick}
-              className={({ isActive }) =>
-                `flex items-center justify-center w-8 h-8 md:w-8 md:h-8 lg:w-10 
-              lg:h-10 p-2 md:p-3 border-2 rounded-full transition duration-300 ease-in-out ${
-                  isActive ? "bg-[#FF5A3A]" : ""
-                } `
-              }
-            >
-              <IoHomeOutline className="text-[17px] text-white  md:text-[18px] font-bold lg:text-[18px]" />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/about"
-              aria-label="About"
-              onClick={handleNavClick}
-              className={({ isActive }) =>
-                `flex items-center justify-center w-8 h-8 md:w-8 md:h-8 lg:w-10 
-              lg:h-10 p-2 md:p-3 border-2 rounded-full transition duration-300 ease-in-out ${
-                  isActive ? "bg-[#FF5A3A]" : ""
-                }`
-              }
-            >
-              <CiFaceMeh className="text-[17px] text-white md:text-[18px] font-bold lg:text-[18px]" />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/portfolio"
-              aria-label="Portfolio"
-              onClick={handleNavClick}
-              className={({ isActive }) =>
-                `flex items-center justify-center w-8 h-8 md:w-8 md:h-8 lg:w-10 
-              lg:h-10 p-2 md:p-3 border-2 rounded-full transition duration-300 ease-in-out ${
-                  isActive ? "bg-[#FF5A3A] " : ""
-                } `
-              }
-            >
-              <MdContactMail className="text-[17px] text-white md:text-[18px] font-bold lg:text-[18px]" />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/blog"
-              aria-label="Blog"
-              onClick={handleNavClick}
-              className={({ isActive }) =>
-                `flex items-center justify-center w-8 h-8 md:w-8 md:h-8 lg:w-10 
-              lg:h-10 p-2 md:p-3 border-2 rounded-full transition duration-300 ease-in-out ${
-                  isActive ? "bg-[#FF5A3A] " : ""
-                }`
-              }
-            >
-              <FaBlogger className="text-[17px] text-white md:text-[18px] font-bold lg:text-[18px]" />
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/contact"
-              aria-label="Contact"
-              onClick={handleNavClick}
-              className={({ isActive }) =>
-                `flex items-center justify-center w-8 h-8 md:w-8 md:h-8 lg:w-10 
-              lg:h-10 p-2 md:p-3 border-2 
-              rounded-full transition duration-300 ease-in-out ${
-                  isActive ? "bg-[#FF5A3A] " : ""
-                }`
-              }
-            >
-              <RiExportFill className="text-[17px] text-white md:text-[18px] font-bold lg:text-[18px]" />
-            </NavLink>
-          </li>
+        <ul className="space-y-6 md:mt-5 lg:mt-0">
+          {[
+            { to: "/", label: "Home", icon: IoHomeOutline },
+            { to: "/about", label: "About", icon: CiFaceMeh },
+            { to: "/portfolio", label: "Portfolio", icon: MdContactMail },
+            { to: "/blog", label: "Blog", icon: FaBlogger },
+            { to: "/contact", label: "Contact", icon: RiExportFill },
+          ].map((item, index) => (
+            <li key={index}>
+              <NavLink
+                to={item.to}
+                aria-label={item.label}
+                onClick={handleNavClick}
+                className={({ isActive }) =>
+                  `flex items-center justify-center w-8 h-8 md:w-8 md:h-8 lg:w-10 
+                  lg:h-10 p-2 md:p-3 border-2 rounded-full transition duration-300 ease-in-out ${
+                    isActive ? "bg-[#FF5A3A]" : ""
+                  }`
+                }
+              >
+                <item.icon className="text-[17px] text-white md:text-[18px] font-bold lg:text-[18px]" />
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </div>
-
-      {/* Overlay for small/medium devices when navbar is open */}
-      {isOpen && isMobile && (
-        <div
-          onClick={toggleNavbar}
-          className="fixed inset-0 bg-black opacity-50 lg:hidden"
-        ></div>
-      )}
     </div>
   );
 };

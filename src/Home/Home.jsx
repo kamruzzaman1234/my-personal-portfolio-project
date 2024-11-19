@@ -22,7 +22,7 @@ const Home = () => {
             <img
               src="https://i.ibb.co/DC4dYGj/Snapchat-1879419947-removebg-preview-1.png" // Replace with your image URL
               alt="Sample"
-              className="w-full h-[400px] md:h-[400px] lg:h-[650px]  max-w-md rounded-lg
+              className="w-full h-[400px] md:h-[400px] lg:h-[550px]  max-w-md rounded-lg
               object-contain" 
             />
           </div>
@@ -36,9 +36,9 @@ const Home = () => {
 
           {/* Column 2 - Name, Description, and Download Button */}
          
-          <div className=" border-[#FF5A3A] col-span-2 text-white rounded-lg">
+          <div className=" border-[#FF5A3A] col-span-2 mt-10 text-white rounded-lg">
               <div>
-              <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold text-[#FF5A3A] mb-5 leading-tight">
+              <h1 className="text-[18px] md:text-2xl lg:text-3xl font-bold text-[#FF5A3A] mb-5 leading-tight">
               Hi, I'm Labib. <span className="text-green-500 text-[30px]">  <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
@@ -55,11 +55,11 @@ const Home = () => {
       ]}
       wrapper="span"
       speed={50}
-      style={{ fontSize: '2em', display: 'inline-block' }}
+      style={{ fontSize: '1em', display: 'inline-block' }}
       repeat={Infinity}
     /></span>
             </h1>
-            <p className="text-lg font-semibold  text-white">
+            <p className="text-sm font-semibold w-[60%] text-whit">
               I’m Kamruzzaman, a passionate Frontend Developer specializing in building
               responsive and user-friendly web applications. With a strong foundation in 
               HTML5, CSS3, JavaScript, and modern libraries like React.js, I enjoy crafting 
@@ -102,7 +102,7 @@ const Home = () => {
       </Link>
     </div>
     <div>
-            <a href="" download={""} className="bg-[#Ff5A3A] p-3 rounded-lg">CV DOWNLOAD</a>
+            <a href="" download={""} className="bg-[#Ff5A3A] p-3 rounded-lg text-sm">CV DOWNLOAD</a>
     </div>
               </div>
           </div>

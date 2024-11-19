@@ -2,10 +2,35 @@ import { Link } from "react-router-dom";
 import { TypeAnimation } from 'react-type-animation';
 
 const AboutDetails = ()=>{
+    const features = [
+        "Responsive Design",
+        "Modern UI/UX",
+        "Interactive Elements",
+        "Dark Mode Support",
+        "Customizable Themes",
+        "Optimized Performance",
+        "Accessibility Features",
+        "Search Functionality",
+        "Pagination or Infinite Scroll",
+        "Form Validation",
+      ];
+      const ulFeature = [
+        "User-Centric Design",
+    "Intuitive Navigation",
+    "Minimalist Aesthetics",
+    "Mobile-First Approach",
+    "Consistency in Design",
+    "Micro-Interactions",
+    "Typography Hierarchy",
+    "Color Psychology",
+    "Accessibility Standards",
+    "Fast Loading Times",
+      ]
+
     return(
         <div className="bg-black py-[20px] rounded-lg">
             <div className="text-center">
-                 <h2 className="font-bold text-[30px] lg:text-[60px] text-white">MD KAMRUZZAMAN</h2> =
+                 <h2 className="font-bold text-[30px] lg:text-[60px] text-white">MD KAMRUZZAMAN</h2>
                 <h4 className="font-bold text-[#FF5A3A] text-[20px]">
        <TypeAnimation
       sequence={[
@@ -29,31 +54,38 @@ const AboutDetails = ()=>{
                 </h4>        
             </div>
             <div className="flex flex-col lg:flex-row gap-9 justify-center lg:justify-between items-center">
-                <div className="w-[240px] flex flex-col mx-8 md:mx-16 lg:mx-auto">
+                <div className="w-[340px] flex flex-col mx-8 md:mx-16 lg:mx-auto">
                     <div className="space-y-3 px-0 lg:px-8 flex justify-center flex-col items-center">
                         <Link to="" className="underline text-[#FF5A3A] 
-                     font-bold text-[20px] text-center">FrontEnd Developer</Link>
-                     <p className='text-white font-bold text-center'>I create unique Web Design and 
-                        Develop website</p>
+                     font-bold text-[20px]">FrontEnd Developer</Link>
+                      <ul className="list-decimal list-inside text-white text-sm space-y-3">
+          {features.map((feature, index) => (
+            <li key={index} className="pl-2">
+              {feature}
+            </li>
+          ))}
+        </ul>
                 </div>
-                <div className="mt-6 flex justify-center items-center">
-                <Link to="" className="bg-[#FF5A3A] 
-                      text-white p-3 rounded-lg font-bold">Contact Me</Link>
-                </div>
+                
                 
                 </div>
 
-                <div className="">
+             <div className="w-[300px]">
                 <img src="https://i.ibb.co/DC4dYGj/Snapchat-1879419947-removebg-preview-1.png" alt="" 
-                className="w-[480px] h-[631px]"/>
+                className="h-[300px] lg:h-[500px] object-cover"/>
             </div>
 
-            <div className="w-[240px] flex mx-8 rounded-lg md:mx-16 lg:mx-auto">
-                    <div className="space-y-3 flex justify-center items-center flex-col">
+            <div className="w-[340px] flex flex-col mx-8 md:mx-16 lg:mx-auto">
+                    <div className="space-y-3 px-0 lg:px-8 flex justify-center flex-col items-center">
                         <Link to="" className="underline text-[#FF5A3A]
                      font-bold text-[20px]">UI Designer</Link>
-                     <p className="text-white font-bold text-center">I create unique UI Design. Make My All Project Design.
-                    I create the high quality Design</p>
+                        <ul className="list-decimal list-inside text-white text-sm space-y-3">
+          {features.map((ulFeature, index) => (
+            <li key={index} className="pl-2">
+              {ulFeature}
+            </li>
+          ))}
+        </ul>
                     </div>
                 </div>
 
