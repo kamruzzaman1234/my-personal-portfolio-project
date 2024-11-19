@@ -52,10 +52,10 @@ const Navbar = () => {
       <div
         className={`fixed transform transition-all duration-500 ease-in-out bg-transparent 
           ${isOpen ? "left-8" : "left-[-250px] lg:left-8"}
-          top-[35%] md:top-[30%] lg:top-[40%] 
+          top-[28%] md:top-[30%] lg:top-[40%] 
           w-16 md:w-48 lg:w-64`}
       >
-        <ul className="space-y-6 md:mt-5 lg:mt-0">
+        <ul className="space-y-4 md:mt-5 lg:mt-0">
           {[
             { to: "/", label: "Home", icon: IoHomeOutline },
             { to: "/about", label: "About", icon: CiFaceMeh },
